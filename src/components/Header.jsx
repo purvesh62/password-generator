@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+
 const Header = () => {
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    console.log(theme);
+    if (theme == null) {
+      localStorage.setItem("theme", "dark");
+    }
+  }, []);
+
   return (
     <>
       <div className="navbar bg-base-300 nav">
@@ -11,6 +21,7 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1">
             <li>
               <select
+                defaultValue={"dark"}
                 placeholder="Theme"
                 data-choose-theme
                 className="focus:outline-none h-10 rounded-full px-3 border">

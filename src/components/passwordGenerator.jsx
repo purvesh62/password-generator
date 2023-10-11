@@ -9,7 +9,7 @@ function PasswordGenerator() {
 
   const generatePassword = () => {
     let pass = "";
-    let characterList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let characterList =~ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     if (includeNumbers) characterList += "0123456789";
     if (includeSymbols) characterList += "!@#$%^&*()_+-={}[]";
 
