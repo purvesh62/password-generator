@@ -1,5 +1,7 @@
 # Password Generator
 
+[App Link](pr-password-generator.netlify.app/)
+
 ### Project Setup
 
 ```
