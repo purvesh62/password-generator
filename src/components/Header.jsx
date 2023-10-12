@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300 nav">
+      <div className="navbar bg-base-300">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">
             Password Generator
@@ -26,6 +26,7 @@ const Header = () => {
                 data-choose-theme
                 className="focus:outline-none h-10 rounded-full px-3 border">
                 <option value="dark">Dark</option>
+                <option value="light">Light</option>
                 <option value="black">Black</option>
                 <option value="pink">Pink</option>
                 <option value="blue">Blue</option>

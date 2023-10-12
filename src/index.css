@@ -13,6 +13,12 @@
     }
 }
 
+
+[data-theme='light'] {
+    --color-default: #d8d8d8;
+}
+
+
 [data-theme='dark'] {
     --color-default: #252b30;
 

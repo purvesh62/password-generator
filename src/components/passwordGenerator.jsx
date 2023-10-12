@@ -9,12 +9,13 @@ function PasswordGenerator() {
 
   const generatePassword = () => {
     let pass = "";
-    let characterList =~ "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let characterList = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     if (includeNumbers) characterList += "0123456789";
     if (includeSymbols) characterList += "!@#$%^&*()_+-={}[]";
-
+    console.log(characterList)
     for (let i = 0; i < length; i++) {
-      const randomIndex = Math.floor(Math.random() * characterList.length + 1);
+      const randomIndex = Math.floor(Math.random() * characterList.length);
+      console.log(randomIndex, characterList[randomIndex])
       pass += characterList[randomIndex];
     }
 
