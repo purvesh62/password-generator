@@ -5,7 +5,7 @@ const Footer = () => {
         <p className="text-center font-body text-primary md:text-left">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 ">
             Made with ❤{" "}
-            <a href="https://github.com/purvesh62" target="_blank">
+            <a href="https://github.com/purvesh62/password-generator" target="_blank">
               Purvesh Rathod
             </a>
           </span>
